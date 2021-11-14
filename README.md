@@ -1,1 +1,1 @@
-Link shortener example project
+Frontend of link shortener example project
