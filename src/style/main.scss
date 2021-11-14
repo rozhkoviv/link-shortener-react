@@ -1,0 +1,101 @@
+$grey-color: #282c34;
+$button-hover-color: #4d5564;
+$blue-color: #0ff;
+
+@font-face {
+    font-family: "Roboto Thin";
+    src: url('../assets/Roboto-Thin.ttf');
+}
+
+@font-face {
+    font-family: "Roboto Bold";
+    src: url('../assets/Roboto-Bold.ttf');
+}
+
+.App {
+    background-color: $grey-color;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+}
+
+.link-input {
+    box-shadow: 0px 0px 20px 2px $blue-color;
+    width: 50%;
+    height: 45px;
+    font-size: 35px;
+    padding: 10px;
+    text-align: center;
+}
+
+.create-link-button {
+    margin-top: 50px;
+    text-transform: uppercase;
+    width: 20%;
+    min-width: 250px;
+    height: 50px;
+    background-color: $blue-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid $blue-color;
+    padding: 4px 7px;
+    outline: 0;
+    border-radius: 10px;
+    color: $grey-color;
+    box-shadow: 0px 0px 20px 2px $blue-color;
+    font-family: "Roboto Bold";
+    font-size: 30px;
+
+    &:hover {
+        background-color: $grey-color;
+        color: $blue-color;
+        cursor: pointer;
+    }
+
+    &::selection {
+        background-color: transparent;
+    }
+}
+
+.arrow {
+
+    display: flex;
+    margin-left: -300px;
+
+    &-label {
+        margin-top: -40px;
+        color: white;
+        margin-right: -50px;
+        font-size: 40px;
+        font-family: "Roboto Thin";
+        &::selection {
+            background-color: transparent;
+        }
+    }
+
+    &-line-right-down {
+        width: 200px;
+        height: 100px;
+        transform: rotate(45deg);
+        background-color: transparent;
+        border: 2px dashed;
+        border-color: white transparent transparent transparent;
+        border-radius: 50%/100px 100px 0 0;
+        margin-bottom: 50px;
+    }
+
+    &-down {
+        background-color: transparent;
+        width: 15px;
+        height: 15px;
+        margin-top: 90px;
+        border: 2px solid white;
+        border-color: transparent white white transparent;
+        transform: rotate(45deg);
+        margin-left: -45px;
+    }
+}
